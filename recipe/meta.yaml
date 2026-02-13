@@ -1,5 +1,5 @@
 {% set name = "pyunigps" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyunigps-{{ version }}.tar.gz
-  sha256: af264141ba93c1e10d5bcdcf6f526583649b9c95f7acf9870faaf535ff420edd
+  sha256: b37703a4f8e568270593ba0273f9da5e87e2cffcb69f138008e3cf6593bdca63
 
 build:
   noarch: python
