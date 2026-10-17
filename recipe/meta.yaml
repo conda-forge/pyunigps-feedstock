@@ -1,5 +1,5 @@
 {% set name = "pyunigps" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyunigps-{{ version }}.tar.gz
-  sha256: 01f7298df8eff8beaad03c2b3a8fd0ddc9781096a210ceaf97a2bbf0b0ee6eba
+  sha256: 17f85ae10a4a251578cbe63ebcc231a8fec179cf6bd888c83a3801ba77b05095
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pynmeagps >=1.1.2
-    - pyrtcm >=1.1.12
+    - pynmeagps >=1.1.7
+    - pyrtcm >=1.2.0
 
 test:
   imports:
